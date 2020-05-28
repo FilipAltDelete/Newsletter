@@ -20,7 +20,7 @@ function Header() {
   );
 }
 const headerStyle = {
-  background: "#333",
+  background: "#5e438d",
   color: "#fff",
   textAlign: "center",
   padding: "10px",

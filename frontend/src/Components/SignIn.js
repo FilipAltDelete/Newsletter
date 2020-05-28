@@ -65,7 +65,9 @@ export default class SignIn extends Component {
       <React.Fragment>
         <div>
           <form onSubmit={this.handleSingIn}>
-            Username:{" "}
+            <br></br>
+            <br></br>
+            Username: <br></br>
             <input
               type="text"
               name="username"
@@ -75,7 +77,8 @@ export default class SignIn extends Component {
               required
             ></input>
             <br></br>
-            Password:{" "}
+            <br></br>
+            Password: <br></br>
             <input
               type="password"
               name="password"
@@ -84,6 +87,7 @@ export default class SignIn extends Component {
               onChange={this.handleChange}
               required
             ></input>
+            <br></br>
             <br></br>
             <button type="submit">Login</button>
           </form>

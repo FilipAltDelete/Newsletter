@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
+//import "./Style.css";
 import Registration from "./Components/Registration";
 import SignIn from "./Components/SignIn";
 import Header from "./Components/Layout/Header";
@@ -21,36 +22,3 @@ export default class App extends Component {
     );
   }
 }
-
-/*
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { apiResponse: "" };
-  }
-
-  callAPI() {
-    fetch("http://localhost:9000/admin")
-      .then((res) => resizeTo.text())
-      .then((res) => this.setState({ apiResponse: res }));
-  }
-
-  componentWillMount(){
-    this.callAPI();
-  }
-}
-*/
-
-/*
-
-function App() {
-  return (
-    <div className="App">
-      <Registration></Registration>
-    </div>
-  );
-}
-
-export default App;
-
-*/

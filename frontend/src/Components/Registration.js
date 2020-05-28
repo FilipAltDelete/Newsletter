@@ -43,7 +43,9 @@ export default class Registration extends Component {
       <React.Fragment>
         <div>
           <form onSubmit={this.handleSubmit}>
-            New User:{" "}
+            <br></br>
+            <br></br>
+            New User: <br></br>
             <input
               type="text"
               name="username"
@@ -53,7 +55,8 @@ export default class Registration extends Component {
               required
             ></input>
             <br></br>
-            New Email:{" "}
+            <br></br>
+            New Email: <br></br>
             <input
               type="text"
               name="email"
@@ -63,7 +66,8 @@ export default class Registration extends Component {
               required
             ></input>
             <br></br>
-            Password:{" "}
+            <br></br>
+            Password: <br></br>
             <input
               type="password"
               name="password"
@@ -72,7 +76,8 @@ export default class Registration extends Component {
               onChange={this.handleChange}
             ></input>
             <br></br>
-            Confirm :{" "}
+            <br></br>
+            Confirm : <br></br>
             <input
               type="password"
               name="password_confirmation"
@@ -80,6 +85,7 @@ export default class Registration extends Component {
               value={this.state.password_confirmation}
               onChange={this.handleChange}
             ></input>
+            <br></br>
             <br></br>
             <button type="submit">Register</button>
           </form>

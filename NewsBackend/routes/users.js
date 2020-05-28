@@ -4,7 +4,6 @@ var fs = require("fs");
 var loginSucess;
 
 router.post("/", function (req, res) {
-  //res.send(req.body);
   var user = req.body.user.username;
   var passw = req.body.user.password;
 
@@ -26,17 +25,6 @@ router.post("/", function (req, res) {
     console.log(loginSucess);
     res.send(loginSucess);
   });
-});
-
-router.put("/", function (res, res) {
-  var putId = res.body.user.id;
-  var putUsername = res.body.user.username;
-  var putPassword = res.body.user.password;
-  var putEmail = res.body.user.email;
-  var putNewsletter = res.body.user.newsletter;
-
-  console.log("PUTTEN FUNKAR");
-  console.log(putUsername);
 });
 
 module.exports = router;

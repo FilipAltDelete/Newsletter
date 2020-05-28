@@ -25,19 +25,4 @@ router.put("/:id", (req, res) => {
   });
 });
 
-/*
-router.put("/:id", function (req, res) {
-  
-  res.send(req.body);
-  var putId = req.body.user.id;
-  var putUsername = req.body.user.username;
-  var putPassword = req.body.user.password;
-  var putEmail = req.body.user.email;
-  var putNewsletter = req.body.user.newsletter;
-    
-  console.log("PUTTEN FUNKAR");
-  console.log(putUsername);
-});
-*/
-
 module.exports = router;

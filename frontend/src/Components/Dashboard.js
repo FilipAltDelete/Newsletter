@@ -27,6 +27,7 @@ export default function Dashboard() {
         Welcome {user.username}!<br></br>
         <br />
         <div>
+          <h4>You dont have any newsletter subscription</h4>
           <h3>Do you want to activate newsletter?</h3>
           <input
             type="button"
@@ -45,7 +46,7 @@ export default function Dashboard() {
         Welcome {user.username}!<br></br>
         <br />
         <div>
-          <h3>Do you want to deactivate newsletter?</h3>
+          <h3>Do you want to Unsubscribe on our newsletter?</h3>
           <input
             type="button"
             value="Deactivate"

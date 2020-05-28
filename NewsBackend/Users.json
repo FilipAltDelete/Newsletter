@@ -32,7 +32,7 @@
     "username": "UserFive",
     "password": "1234",
     "email": "Email@something.com",
-    "newsletter": false
+    "newsletter": true
   },
   {
     "id": 6,
@@ -40,5 +40,12 @@
     "password": "hejhej",
     "email": "something@something.com",
     "newsletter": false
+  },
+  {
+    "id": 7,
+    "username": "Filip",
+    "password": "123",
+    "email": "filip1",
+    "newsletter": true
   }
 ]
