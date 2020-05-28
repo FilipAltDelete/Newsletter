@@ -40,49 +40,51 @@ export default class Registration extends Component {
 
   render() {
     return (
-      <div>
-        <form onSubmit={this.handleSubmit}>
-          New User:{" "}
-          <input
-            type="text"
-            name="username"
-            placeholder="Username"
-            value={this.state.username}
-            onChange={this.handleChange}
-            required
-          ></input>
-          <br></br>
-          New Email:{" "}
-          <input
-            type="text"
-            name="email"
-            placeholder="Email"
-            value={this.state.email}
-            onChange={this.handleChange}
-            required
-          ></input>
-          <br></br>
-          Password:{" "}
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            value={this.state.password}
-            onChange={this.handleChange}
-          ></input>
-          <br></br>
-          Confirm :{" "}
-          <input
-            type="password"
-            name="password_confirmation"
-            placeholder="Password Confirmation"
-            value={this.state.password_confirmation}
-            onChange={this.handleChange}
-          ></input>
-          <br></br>
-          <button type="submit">Register</button>
-        </form>
-      </div>
+      <React.Fragment>
+        <div>
+          <form onSubmit={this.handleSubmit}>
+            New User:{" "}
+            <input
+              type="text"
+              name="username"
+              placeholder="Username"
+              value={this.state.username}
+              onChange={this.handleChange}
+              required
+            ></input>
+            <br></br>
+            New Email:{" "}
+            <input
+              type="text"
+              name="email"
+              placeholder="Email"
+              value={this.state.email}
+              onChange={this.handleChange}
+              required
+            ></input>
+            <br></br>
+            Password:{" "}
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              value={this.state.password}
+              onChange={this.handleChange}
+            ></input>
+            <br></br>
+            Confirm :{" "}
+            <input
+              type="password"
+              name="password_confirmation"
+              placeholder="Password Confirmation"
+              value={this.state.password_confirmation}
+              onChange={this.handleChange}
+            ></input>
+            <br></br>
+            <button type="submit">Register</button>
+          </form>
+        </div>
+      </React.Fragment>
     );
   }
 }

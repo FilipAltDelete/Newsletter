@@ -7,6 +7,7 @@ var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 var adminRouter = require("./routes/Admin");
 var createUserRouter = require("./routes/CreateUser");
+var updateUserRouter = require("./routes/UpdateUser");
 
 var app = express();
 
@@ -27,5 +28,6 @@ app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/Admin", adminRouter);
 app.use("/CreateUser", createUserRouter);
+app.use("/UpdateUser", updateUserRouter);
 
 module.exports = app;
